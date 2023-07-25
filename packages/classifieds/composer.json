@@ -1,0 +1,15 @@
+{
+	"name": "talk/classifieds",
+	"description": "Classifieds",
+	"type": "typo3-cms-extension",
+	"autoload": {
+		"psr-4": {
+			"Talk\\Classifieds\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "classifieds"
+		}
+	}
+}

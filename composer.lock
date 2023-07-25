@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6bc877bfb6249a9ce7194b1cf711f1bb",
+    "content-hash": "518c6ac3be12236015df3daaaf1e696b",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2613,6 +2613,58 @@
                 "source": "https://github.com/scssphp/scssphp/tree/v1.11.0"
             },
             "time": "2022-09-02T21:24:55+00:00"
+        },
+        {
+            "name": "spooner-web/tcabuilder",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.spooner.io/spooner-web/tcabuilder",
+                "reference": "131af8ae35e1ad1357e4f07c6d02a506302d8d1c"
+            },
+            "require": {
+                "php": ">= 7.4, < 8.3",
+                "typo3/cms-backend": "^v11.5 || ^v12.4",
+                "typo3/cms-core": "^v11.5 || ^v12.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "ssch/typo3-rector": "^1.1"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "tcabuilder"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SpoonerWeb\\TcaBuilder\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Löffler",
+                    "email": "loeffler@spooner-web.de",
+                    "homepage": "https://spooner-web.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Utility to easily maintain and create your TCA forms",
+            "support": {
+                "issues": "https://git.spooner.io/spooner-web/tcabuilder/issues"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/Tomalo",
+                    "type": "other"
+                }
+            ],
+            "time": "2023-05-17T13:07:00+00:00"
         },
         {
             "name": "symfony/cache",
@@ -5477,6 +5529,30 @@
                 }
             ],
             "time": "2023-04-28T13:28:14+00:00"
+        },
+        {
+            "name": "talk/classifieds",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/classifieds",
+                "reference": "4ab1382e63619c0c989834cb51c0e335a52ce24f"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "classifieds"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Talk\\Classifieds\\": "Classes/"
+                }
+            },
+            "description": "Classifieds",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "typo3/class-alias-loader",
@@ -9467,6 +9543,77 @@
             "time": "2023-07-11T10:08:40+00:00"
         },
         {
+            "name": "typo3/cms-styleguide",
+            "version": "12.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3/styleguide.git",
+                "reference": "5bc1de7353a5c940a983884bd215c8c98d9aebbc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3/styleguide/zipball/5bc1de7353a5c940a983884bd215c8c98d9aebbc",
+                "reference": "5bc1de7353a5c940a983884bd215c8c98d9aebbc",
+                "shasum": ""
+            },
+            "require-dev": {
+                "codeception/codeception": "^5.0",
+                "codeception/module-asserts": "^3.0",
+                "codeception/module-cli": "^2.0",
+                "codeception/module-webdriver": "^4.0",
+                "friendsofphp/php-cs-fixer": "^3.16.0",
+                "phpstan/phpstan": "^1.10.14",
+                "typo3/cms-core": "~12.4@dev",
+                "typo3/cms-frontend": "~12.4@dev",
+                "typo3/cms-install": "~12.4@dev",
+                "typo3/testing-framework": "^8.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/Web",
+                    "extension-key": "styleguide"
+                },
+                "branch-alias": {
+                    "dev-main": "12.x.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Styleguide\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 CMS Core Team",
+                    "homepage": "https://forge.typo3.org/projects/typo3cms-core",
+                    "role": "Developer"
+                },
+                {
+                    "name": "The TYPO3 Community",
+                    "homepage": "https://typo3.org/community/",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "TYPO3 extension to showcase TYPO3 Backend capabilities",
+            "homepage": "https://github.com/TYPO3/styleguide",
+            "keywords": [
+                "style guide",
+                "typo3",
+                "typo3 backend"
+            ],
+            "support": {
+                "issues": "https://github.com/TYPO3/styleguide/issues",
+                "source": "https://github.com/TYPO3/styleguide/tree/12.0.1"
+            },
+            "time": "2023-06-05T17:59:50+00:00"
+        },
+        {
             "name": "typo3/coding-standards",
             "version": "v0.5.5",
             "source": {
@@ -9547,7 +9694,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "talk/classifieds": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

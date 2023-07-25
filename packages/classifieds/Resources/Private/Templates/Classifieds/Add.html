@@ -1,0 +1,26 @@
+<html data-namespace-typo3-fluid="true"
+      f:schemaLocation="https://fluidtypo3.org/schemas/vhs-master.xsd"
+      lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+
+<f:form action="save" enctype="multipart/form-data" name="add" object="{add}">
+    <div class="form-group">
+        <label for="formtitle">Title of your offer</label>
+        <f:form.textfield class="form-control" id="formtitle" property="title"/>
+    </div>
+    <div class="form-group">
+        <label for="formtext">Title of your offer</label>
+        <f:form.textarea class="form-control" id="formtext" property="bodytext"/>
+    </div>
+    <div class="form-group">
+        <label for="formimg">Image</label>
+        <input name="tx_classifieds_classifieds[add][b64img]" type="hidden" value="{add.b64image}">
+        <f:if condition="{add.b64img}"><img alt="" src="{add.b64img}"/></f:if>
+        <f:form.upload class="form-control" id="formimg" property="b64img"/>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit and save</button>
+
+</f:form>
+
+</html>
