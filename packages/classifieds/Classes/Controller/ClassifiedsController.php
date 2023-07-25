@@ -47,8 +47,6 @@ class ClassifiedsController extends ActionController
     }
     public function saveAction(Add $add): ResponseInterface
     {
-        $contentObject = $this->request?->getAttribute('currentContentObject') ?? $this->contentObject;
-        $add->setPid($contentObject->data['pid']);
         $add->setHidden(true);
         $this->add_repostitory->add($add);
         return $this->redirect('index');

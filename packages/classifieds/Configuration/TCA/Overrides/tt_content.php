@@ -30,5 +30,6 @@ call_user_func(function (): void {
                ->addDiv('Allgemein')
                ->addPalette('general')
                ->addPalette('header')
+               ->addField('pages')
                ->saveToTca();
 });

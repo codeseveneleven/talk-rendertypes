@@ -21,10 +21,9 @@ return [
         'defaultSortby'     => 'tstamp',
         'tstamp'            => 'tstamp',
         'crdate'            => 'crdate',
-        'enablecolumns'      => [
-            'disable'=>'hidden',
+        'enablecolumns' => [
+            'disabled' => 'hidden',
         ],
-        'rootLevel' => 0,
         'searchFields' => 'title,bodytext',
         'dynamicConfigFile' => ExtensionManagementUtility::extPath('classifieds') . 'Configuration/TCA/tx_classifieds_domain_model_add.php',
         'iconfile' => 'EXT:classifieds/Resources/Public/Icons/Extension.svg',
