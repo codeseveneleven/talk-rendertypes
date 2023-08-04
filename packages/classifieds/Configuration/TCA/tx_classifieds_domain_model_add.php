@@ -51,7 +51,13 @@ return [
                 ],
             ],
         ],
-
+        'global_information' => [
+            'label' => 'Infos',
+            'config' => [
+                'type' => 'none',
+                'renderType'=>'infosheet',
+            ],
+        ],
         'title' => [
             'exclude' => 0,
             'label' => 'Title',
@@ -77,6 +83,7 @@ return [
                 'type' => 'text',
                 'cols' => 80,
                 'rows' => 15,
+                'renderType'=>'base64image',
             ],
         ],
 

@@ -49,8 +49,8 @@ class InfosheetFormElement extends AbstractFormElement
                 1
             );
             $historyRow = $res->fetchAssociative();
-            $html[] = sprintf($rowTemplate, 'Last Change', date('d.m.Y H:i', $historyRow['tstamp']));
             if ($historyRow) {
+                $html[] = sprintf($rowTemplate, 'Last Change', date('d.m.Y H:i', $historyRow['tstamp']));
                 $beuser = BackendUtility::getRecord('be_users', $historyRow['userid']);
                 $html[] = sprintf($rowTemplate, 'Last Change By', $beuser['realName'] . ' (' . $beuser['username'] . ')');
             }
