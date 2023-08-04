@@ -25,14 +25,3 @@ ExtensionUtility::configurePlugin(
     ],
     ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
 );
-
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1690219795] = [
-    'nodeName' => 'base64image',
-    'priority' => 10,
-    'class' => \Talk\Classifieds\Backend\TCA\Base64ImageFormElement::class,
-];
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1690286618] = [
-    'nodeName' => 'infosheet',
-    'priority' => 10,
-    'class' => \Talk\Classifieds\Backend\TCA\InfosheetFormElement::class,
-];

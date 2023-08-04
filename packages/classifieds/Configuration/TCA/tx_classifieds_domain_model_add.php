@@ -30,7 +30,7 @@ return [
     ],
     'types' => [
         '0' => [
-            'showitem' => 'global_information,hidden,title,bodytext,b64img',
+            'showitem' => 'hidden,title,bodytext,b64img',
         ],
     ],
     'palettes' => [
@@ -51,13 +51,7 @@ return [
                 ],
             ],
         ],
-        'global_information' => [
-            'label' => 'Infos',
-            'config' => [
-                'type' => 'none',
-                'renderType'=>'infosheet',
-            ],
-        ],
+
         'title' => [
             'exclude' => 0,
             'label' => 'Title',
@@ -83,7 +77,6 @@ return [
                 'type' => 'text',
                 'cols' => 80,
                 'rows' => 15,
-                'renderType'=>'base64image',
             ],
         ],
 
