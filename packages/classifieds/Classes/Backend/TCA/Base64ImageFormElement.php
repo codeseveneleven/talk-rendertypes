@@ -20,13 +20,13 @@ use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
 
 class Base64ImageFormElement extends AbstractFormElement
 {
-    public function render()
+    public function render(): array
     {
         $result = $this->initializeResultArray();
         $parameterArray = $this->data['parameterArray'];
 
         $html = [];
-        $html[] = sprintf('<input type="hidden" name="%s" id="%s" value="%s"/>', $parameterArray['itemFormElName'], $parameterArray['itemFormElID'], $parameterArray['itemFormElValue']);
+        $html[] = sprintf('<input type="hidden" name="%s" value="%s"/>', $parameterArray['itemFormElName'], $parameterArray['itemFormElValue']);
 
         $html[] = '<figure class="b64preview">';
         if (str_starts_with($parameterArray['itemFormElValue'], 'data:')) {
