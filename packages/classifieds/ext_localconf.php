@@ -11,8 +11,8 @@
  * @copyright 2022 B-Factor GmbH / 12bis3 / Sudhaus7 / https://code711.de/
  */
 
-use Talk\Classifieds\Backend\TCA\Base64ImageFormElement;
-use Talk\Classifieds\Backend\TCA\InfosheetFormElement;
+//use Talk\Classifieds\Backend\TCA\Base64ImageFormElement;
+//use Talk\Classifieds\Backend\TCA\InfosheetFormElement;
 use Talk\Classifieds\Controller\ClassifiedsController;
 use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
