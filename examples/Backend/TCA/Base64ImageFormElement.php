@@ -20,7 +20,7 @@ use TYPO3\CMS\Backend\Form\Element\AbstractFormElement;
 
 class Base64ImageFormElement extends AbstractFormElement
 {
-    public function render()
+    public function render(): array
     {
         $result = $this->initializeResultArray();
         $parameterArray = $this->data['parameterArray'];

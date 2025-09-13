@@ -25,7 +25,7 @@ class InfosheetFormElement extends AbstractFormElement
     /**
      * @inheritDoc
      */
-    public function render()
+    public function render(): array
     {
         $result = $this->initializeResultArray();
 
