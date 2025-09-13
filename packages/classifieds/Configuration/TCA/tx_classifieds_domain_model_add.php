@@ -30,7 +30,7 @@ return [
     ],
     'types' => [
         '0' => [
-            'showitem' => 'global_information,hidden,title,bodytext,b64img',
+            'showitem' => 'hidden,title,bodytext,b64img',
         ],
     ],
     'palettes' => [
@@ -49,14 +49,6 @@ return [
                         'invertStateDisplay' => true,
                     ],
                 ],
-            ],
-        ],
-
-        'global_information' => [
-            'label' => 'Infos',
-            'config' => [
-                'type' => 'none',
-                'renderType'=>'infosheet',
             ],
         ],
 
@@ -85,7 +77,7 @@ return [
                 'type' => 'text',
                 'cols' => 80,
                 'rows' => 15,
-                'renderType'=>'base64image',
+        //        'renderType'=>'base64image',
             ],
         ],
 

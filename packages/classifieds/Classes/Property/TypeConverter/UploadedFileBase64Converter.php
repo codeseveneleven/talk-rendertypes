@@ -35,7 +35,7 @@ class UploadedFileBase64Converter extends AbstractTypeConverter
         array $convertedChildProperties = [],
         PropertyMappingConfigurationInterface $configuration = null
     ) {
-        if (str_starts_with($source, 'data:')) {
+        if (!is_array($source) && str_starts_with($source, 'data:')) {
             return $source;
         }
 

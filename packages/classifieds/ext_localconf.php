@@ -20,14 +20,14 @@ ExtensionUtility::configurePlugin(
     'Classifieds',
     'Classifieds',
     [
-        ClassifiedsController::class => 'index,add,save,detail',
+        ClassifiedsController::class => 'index,add,save',
     ],
     [
-        ClassifiedsController::class => 'index,add,save,detail',
+        ClassifiedsController::class => 'index,add,save',
     ],
     ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
 );
-
+/* *
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1690219795] = [
     'nodeName' => 'base64image',
     'priority' => 10,
@@ -39,3 +39,4 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1690286618] = [
     'priority' => 10,
     'class' => InfosheetFormElement::class,
 ];
+// */
