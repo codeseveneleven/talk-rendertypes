@@ -30,7 +30,7 @@ return [
     ],
     'types' => [
         '0' => [
-            'showitem' => 'hidden,title,bodytext,b64img',
+            'showitem' => 'global_information,hidden,title,bodytext,b64img',
         ],
     ],
     'palettes' => [
@@ -78,6 +78,13 @@ return [
                 'cols' => 80,
                 'rows' => 15,
                 'renderType'=>'base64image',
+            ],
+        ],
+        'global_information' => [
+            'label' => 'Infos',
+            'config' => [
+                'type' => 'none',
+                'renderType'=>'infosheet',
             ],
         ],
 
