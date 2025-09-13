@@ -11,6 +11,8 @@
  * @copyright 2022 B-Factor GmbH / 12bis3 / Sudhaus7 / https://code711.de/
  */
 
+use Talk\Classifieds\Backend\TCA\Base64ImageFormElement;
+use Talk\Classifieds\Backend\TCA\InfosheetFormElement;
 use Talk\Classifieds\Controller\ClassifiedsController;
 use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
@@ -25,3 +27,16 @@ ExtensionUtility::configurePlugin(
     ],
     ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
 );
+/* *
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1690219795] = [
+    'nodeName' => 'base64image',
+    'priority' => 10,
+    'class' => Base64ImageFormElement::class,
+];
+
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][1690286618] = [
+    'nodeName' => 'infosheet',
+    'priority' => 10,
+    'class' => InfosheetFormElement::class,
+];
+// */

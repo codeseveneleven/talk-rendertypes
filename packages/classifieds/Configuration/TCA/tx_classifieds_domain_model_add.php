@@ -77,6 +77,7 @@ return [
                 'type' => 'text',
                 'cols' => 80,
                 'rows' => 15,
+        //        'renderType'=>'base64image',
             ],
         ],
 
